@@ -203,7 +203,7 @@
 
         //=========\\====If all required fields are filled====//==========\\
         if (valForm()) {
-            //=========\\====Create an object for the user's data====//==========\\
+            //=========\\====If all required fields are filled====//==========\\
             var userData = {
                 name: $("#name").val(),
                 Photo: $("#photo").val(),
@@ -220,23 +220,7 @@
                     $("#q10").val(),
                 ]
             };
-            //=========\\====AJAX post the data to the friends API.====//==========\\
-            $.post(currentURL + "/api/friends", userData, function (data) {
 
 
-                $("#matchName").text(data.name);
-                $("#matchImg").attr("src", data.photo);
-
-                $("#resultsModal").modal("toggle");
-
-            });
         }
-        else {
-            alert("Fill out for before submitting!");
-        }
-        return false;
-    });
-
-    </script>
-
-</html>
+</script>

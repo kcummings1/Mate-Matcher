@@ -192,8 +192,8 @@
                 }
             });
         }
-
-        $(".chosen-select").each(function () {
+        
+        $(".chosen-select").each(function() {
 
             if ($(this).val() === "") {
                 isVal = false;
@@ -201,42 +201,22 @@
         })
         return isVal;
 
-        //=========\\====If all required fields are filled====//==========\\
-        if (valForm()) {
-            //=========\\====Create an object for the user's data====//==========\\
-            var userData = {
-                name: $("#name").val(),
-                Photo: $("#photo").val(),
-                scores: [
-                    $("#q1").val(),
-                    $("#q2").val(),
-                    $("#q3").val(),
-                    $("#q4").val(),
-                    $("#q5").val(),
-                    $("#q6").val(),
-                    $("#q7").val(),
-                    $("#q8").val(),
-                    $("#q9").val(),
-                    $("#q10").val(),
-                ]
-            };
-            //=========\\====AJAX post the data to the friends API.====//==========\\
-            $.post(currentURL + "/api/friends", userData, function (data) {
-
-
-                $("#matchName").text(data.name);
-                $("#matchImg").attr("src", data.photo);
-
-                $("#resultsModal").modal("toggle");
-
-            });
+     if (valForm()) {
+        var userData = {
+            name: $("#name").val(),
+            Photo: $("#photo").val(),
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val(),
+            ]
         }
-        else {
-            alert("Fill out for before submitting!");
-        }
-        return false;
-    });
-
-    </script>
-
-</html>
+    }
+</script>

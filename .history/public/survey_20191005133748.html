@@ -220,23 +220,12 @@
                     $("#q10").val(),
                 ]
             };
-            //=========\\====AJAX post the data to the friends API.====//==========\\
-            $.post(currentURL + "/api/friends", userData, function (data) {
+//=========\\====AJAX post the data to the friends API.====//==========\\
+$.post(currentURL + "/api/friends", userData, function(data) {
 
 
-                $("#matchName").text(data.name);
-                $("#matchImg").attr("src", data.photo);
+    $("#m=")
+})
 
-                $("#resultsModal").modal("toggle");
-
-            });
         }
-        else {
-            alert("Fill out for before submitting!");
-        }
-        return false;
-    });
-
-    </script>
-
-</html>
+</script>
