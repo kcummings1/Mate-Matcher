@@ -3,14 +3,12 @@
 
 <head>
     <title>Friend Finder | Survey</title>
-    <!--===================\\BootStrap//===================-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <div class="container content">
-        <h1>Take a survey dangus</h1>
+        <h1>Survey</h1>
         <p>Take a quick survey to find your perfect match! These questions are answered by the numbers 1 through 5. If
             you really, really disagree with the statement, well, your answer would be 1. If you find yourself thinking
             "yeah I would do that", then put in a 5 ya dangus.</p>
@@ -44,7 +42,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="question3">I believe in paper money.</label>
+                <label for="question3">If you believe paper money is real.</label>
                 <select class="form-control" id="question3">
                     <option value="empty"></option>
                     <option value="1">1</option>
@@ -55,7 +53,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="question4">I believe that Invader zim will take over the earth.</label>
+                <label for="question4">Enjoys partaking in martial arts.</label>
                 <select class="form-control" id="question4">
                     <option value="empty"></option>
                     <option value="1">1</option>
@@ -99,7 +97,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="question8">I enjoy chokey chicken.</label>
+                <label for="question8">I am good with money.</label>
                 <select class="form-control" id="question8">
                     <option value="empty"></option>
                     <option value="1">1</option>
@@ -134,7 +132,7 @@
             </div>
         </form>
         <div class="text-center"><br>
-            <button><i class="fa fa-pencil survey-button"> Submit</i><button>
+            <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
         </div>
 
         <!-- Modal after survey completion -->

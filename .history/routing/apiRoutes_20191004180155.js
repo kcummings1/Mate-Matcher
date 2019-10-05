@@ -23,7 +23,7 @@ module.exports = function (app) {
             for (var k = 0; k < compFriend.scores.length; k++) {
                 var differenceOnScore = Math.abs(compFriend.scores[k] - newFriend.scores[k]);
                 totDifference += differenceOnScore;
-            };
+            }
             diffArray[i] = totDifference;
         };
         var bfNum = diffArray[0];
