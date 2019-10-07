@@ -15,8 +15,8 @@ app.use(express.json());
 
 //=========\\====Requires /api and html /routes====//==========\\
 
-require("./routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 //=========\\====Server is listening====//==========\\
 

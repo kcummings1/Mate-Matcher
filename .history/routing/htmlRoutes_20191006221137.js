@@ -11,7 +11,7 @@ module.exports = function(app) {
 
 //=============\\=//================//
 
-app.get("/", function(req, res) {
+app.get("/", function(_req, res) {
     res.sendFile(path.join(__dirname, "/../public/home.html"));
 });
 
